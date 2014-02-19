@@ -69,7 +69,7 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree.git'
 " vim-scripts repos
 Bundle 'https://github.com/vim-scripts/Smart-Tabs.git'
-Bundle 'https://github.com/mattn/zencoding-vim.git'
+Bundle 'mattn/emmet-vim'
 " non github repos
 Bundle 'joonty/vdebug.git'
 
