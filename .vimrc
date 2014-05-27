@@ -51,30 +51,33 @@ set wrapmargin=80
 
 au BufNewFile,BufRead *.htaccess-local set filetype=apache
 au BufNewFile,BufRead Boxfile set filetype=YAML
+au BufNewFile,BufRead *.vimrc set filetype=vim
+au BufNewFile,BufRead *.gvimrc set filetype=vim
 
 " -----------------------------------------------------------
 "  Vundle - vim bundle plugin manager
 "
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Manage Bundles
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 " My Bundles here:
 "
 " original repos on github
 Bundle 'scrooloose/nerdtree.git'
 " vim-scripts repos
-Bundle 'https://github.com/vim-scripts/Smart-Tabs.git'
 Bundle 'mattn/emmet-vim'
 " non github repos
 Bundle 'joonty/vdebug.git'
 
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 filetype off
-filetype indent plugin on
 
 "------------------------------------------------------------
 " Must have options {{{1
