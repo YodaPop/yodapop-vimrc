@@ -192,9 +192,9 @@ set directory=~/.vim/tmp
 " Do not change 'tabstop' from its default value of 8 with this setup.
 set tabstop=4
 set shiftwidth=4
-" No soft tabs
-" set softtabstop=4
-" set expandtab
+" soft tabs
+set softtabstop=4
+set expandtab
 
 "------------------------------------------------------------
 " Mappings {{{1
