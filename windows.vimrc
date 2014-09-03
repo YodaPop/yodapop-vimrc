@@ -52,6 +52,7 @@ set wrapmargin=80
 au BufNewFile,BufRead Boxfile set filetype=YAML
 au BufNewFile,BufRead *.vimrc set filetype=vim
 au BufNewFile,BufRead *.gvimrc set filetype=vim
+au BufNewFile,BufRead *.ps1 set filetype=ps1
 
 " -----------------------------------------------------------
 "  Vundle - vim bundle plugin manager
