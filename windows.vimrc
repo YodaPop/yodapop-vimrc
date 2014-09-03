@@ -181,8 +181,8 @@ highlight Whitespace ctermfg=Gray guifg=Gray
 match Whitespace /\s\+/
 
 " Create swap files in a temporary folder
-set backupdir=~/.vim/tmp
-set directory=~/.vim/tmp
+set backupdir=~/temp
+set directory=~/temp
 
 "------------------------------------------------------------
 " Indentation options {{{1
