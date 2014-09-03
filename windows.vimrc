@@ -57,8 +57,9 @@ au BufNewFile,BufRead *.gvimrc set filetype=vim
 "  Vundle - vim bundle plugin manager
 "
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/vimfiles/bundle/Vundle.vim/
+let path='~/vimfiles/bundle'
+call vundle#begin(path)
 
 " Manage Bundles
 " let Vundle manage Vundle
@@ -172,7 +173,7 @@ set pastetoggle=<F11>
 
 " Show invisibles
 set list!
-set listchars=tab:>-,trail:Â·,eol:Â¶,extends:>,precedes:<
+set listchars=tab:>-,trail:·,eol:¶,extends:>,precedes:<
 
 " highlight non-text as gray
 highlight NonText ctermfg=Gray guifg=Gray

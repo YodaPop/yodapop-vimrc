@@ -172,7 +172,7 @@ set pastetoggle=<F11>
 
 " Show invisibles
 set list!
-set listchars=tab:>-,trail:Â·,eol:Â¶,extends:>,precedes:<
+set listchars=tab:>-,trail:·,eol:¶,extends:>,precedes:<
 
 " highlight non-text as gray
 highlight NonText ctermfg=Gray guifg=Gray
