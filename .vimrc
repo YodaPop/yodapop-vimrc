@@ -30,7 +30,7 @@ set nocompatible
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
 " and for plugins that are filetype specific.
-" filetype indent plugin on
+filetype indent plugin on
 
 " Enable syntax highlighting
 syntax on
@@ -75,8 +75,6 @@ Bundle 'joonty/vdebug.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
-filetype off
 
 "------------------------------------------------------------
 " Must have options {{{1
