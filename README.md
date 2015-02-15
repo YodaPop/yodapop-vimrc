@@ -1,7 +1,7 @@
 # YodaPop Vim Configuration
 ### Steps to configure Vim
 
-1. Create a folder named ".vim" in you user profile
+1. Create a folder named ".vim" in your user profile
 2. Clone the yodapop-vimrc repository
     1. Open a terminal
     2. Execute the following command
