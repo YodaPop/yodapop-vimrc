@@ -57,8 +57,9 @@ au BufNewFile,BufRead *.gvimrc set filetype=vim
 "  Vundle - vim bundle plugin manager
 "
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/vimfiles/bundle/Vundle.vim/
+let path='~/vimfiles/bundle'
+call vundle#begin(path)
 
 " Manage Bundles
 " let Vundle manage Vundle
