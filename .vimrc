@@ -17,20 +17,46 @@ runtime! debian.vim
 "              If you're a more advanced user, building your own .vimrc based
 "              on this file is still a good idea.
 
+" -----------------------------------------------------------
+"  Vundle - vim bundle plugin manager
+"
+" Set 'nocompatible' to ward off unexpected things that your distro might
+" have made, as well as sanely reset options when re-sourcing .vimrc
+set nocompatible
+" Required for Vundle
+filetype off
+
+set rtp+=~/vimfiles/bundle/Vundle.vim/
+let path='~/vimfiles/bundle'
+call vundle#begin(path)
+
+" Manage Bundles
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/Vundle.vim'
+" My Bundles here:
+"
+" original repos on github
+Bundle 'scrooloose/nerdtree.git'
+" vim-scripts repos
+Bundle 'mattn/emmet-vim'
+" non github repos
+Bundle 'joonty/vdebug.git'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+" Attempt to determine the type of a file based on its name and possibly its
+" contents. Use this to allow intelligent auto-indenting for each filetype,
+" and for plugins that are filetype specific.
+filetype indent plugin on
+
 "------------------------------------------------------------
 " Features {{{1
 "
 " These options and commands enable some very useful features in Vim, that
 " no user should have to live without.
 
-" Set 'nocompatible' to ward off unexpected things that your distro might
-" have made, as well as sanely reset options when re-sourcing .vimrc
-set nocompatible
-
-" Attempt to determine the type of a file based on its name and possibly its
-" contents. Use this to allow intelligent auto-indenting for each filetype,
-" and for plugins that are filetype specific.
-filetype indent plugin on
 
 " Enable syntax highlighting
 syntax on
@@ -52,30 +78,6 @@ set wrapmargin=80
 au BufNewFile,BufRead Boxfile set filetype=YAML
 au BufNewFile,BufRead *.vimrc set filetype=vim
 au BufNewFile,BufRead *.gvimrc set filetype=vim
-
-" -----------------------------------------------------------
-"  Vundle - vim bundle plugin manager
-"
-
-set rtp+=~/vimfiles/bundle/Vundle.vim/
-let path='~/vimfiles/bundle'
-call vundle#begin(path)
-
-" Manage Bundles
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/Vundle.vim'
-" My Bundles here:
-"
-" original repos on github
-Bundle 'scrooloose/nerdtree.git'
-" vim-scripts repos
-Bundle 'mattn/emmet-vim'
-" non github repos
-Bundle 'joonty/vdebug.git'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 
 "------------------------------------------------------------
 " Must have options {{{1
