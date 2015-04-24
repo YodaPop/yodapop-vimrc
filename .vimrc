@@ -44,7 +44,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'joonty/vdebug.git'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+call vundle#end()
 
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
@@ -181,8 +181,8 @@ highlight Whitespace ctermfg=Gray guifg=Gray
 match Whitespace /\s\+/
 
 " Create swap files in a temporary folder
-set backupdir=.,$TEMP
-set directory=.,$TEMP
+set backupdir=%TEMP%
+set directory=%TEMP%
 
 "------------------------------------------------------------
 " Indentation options {{{1
