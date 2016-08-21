@@ -40,8 +40,6 @@ Bundle 'gmarik/Vundle.vim'
 Bundle 'scrooloose/nerdtree.git'
 " vim-scripts repos
 Bundle 'mattn/emmet-vim'
-" non github repos
-Bundle 'joonty/vdebug.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
